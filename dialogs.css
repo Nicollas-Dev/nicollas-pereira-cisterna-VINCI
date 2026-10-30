@@ -1,0 +1,60 @@
+.vinci-dialog {
+  box-sizing: border-box;
+  width: min(620px, calc(100% - 32px));
+  max-height: calc(100dvh - 40px);
+  padding: 0;
+  border: 1px solid #e7e7e7;
+  background: #fff;
+  color: #1a1a1a;
+  box-shadow: 0 24px 100px #0003;
+  overscroll-behavior: contain;
+}
+
+.vinci-dialog::backdrop { background: rgb(0 0 0 / 50%); }
+.vinci-dialog *, .vinci-dialog *::before, .vinci-dialog *::after { box-sizing: border-box; }
+.vinci-dialog--wide { width: min(800px, calc(100% - 32px)); }
+.vinci-dialog__body { position: relative; padding: 44px 40px 36px; }
+.vinci-dialog__eyebrow { margin: 0 40px 25px 0; font: 400 13px/1.4 'Genos', sans-serif; letter-spacing: .25em; }
+.vinci-dialog h2 { margin: 0 24px 22px 0; font: 400 36px/1.05 'Genos', sans-serif; text-transform: uppercase; }
+.vinci-dialog h3 { margin: 0 0 14px; font: 400 28px/1.1 'Genos', sans-serif; text-transform: uppercase; }
+.vinci-dialog__content { font: 400 14px/1.7 'Host Grotesk', sans-serif; }
+.vinci-dialog__content p { margin: 0 0 22px; }
+.vinci-dialog__close { position: absolute; top: 17px; right: 17px; width: 40px; height: 40px; border: 0; background: transparent; color: #1a1a1a; font: 300 32px/1 sans-serif; cursor: pointer; }
+.vinci-dialog__close:hover { background: #f4f4f4; }
+.vinci-dialog__notice { padding: 14px 16px; border-left: 2px solid #e51837; background: #f7f7f7; font-size: 13px; }
+.vinci-dialog__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px; }
+.vinci-dialog__field { display: flex; flex-direction: column; gap: 6px; font: 400 14px/1.4 'Host Grotesk', sans-serif; }
+.vinci-dialog__field--wide { grid-column: 1 / -1; }
+.vinci-dialog input, .vinci-dialog select { width: 100%; min-width: 0; min-height: 45px; padding: 11px 12px; border: 1px solid #bcbcbc; border-radius: 0; background: #fff; color: #1a1a1a; font: 400 14px/1.3 'Host Grotesk', sans-serif; }
+.vinci-dialog input::placeholder { color: #777; }
+.vinci-dialog small { color: #666; font-size: 11px; }
+.vinci-dialog__content .vinci-dialog__required { margin: 13px 0 22px; color: #666; font-size: 11px; }
+.vinci-dialog__content .vinci-dialog__saved-note { color: #555; font-size: 12px; }
+.vinci-dialog__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px; margin-top: 26px; }
+.vinci-dialog__button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 13px 25px; border: 1px solid #e51837; border-radius: 0; background: #e51837; color: #fff; font: 500 19px/1 'Genos', sans-serif; text-align: center; text-transform: uppercase; text-decoration: none; cursor: pointer; }
+.vinci-dialog__button:hover { border-color: #c20f2c; background: #c20f2c; }
+.vinci-dialog__button--outline { border-color: #1a1a1a; background: #fff; color: #1a1a1a; }
+.vinci-dialog__button--outline:hover { border-color: #1a1a1a; background: #f4f4f4; }
+.vinci-dialog__button--full { width: 100%; }
+.vinci-dialog :focus-visible { outline: 2px solid #e51837; outline-offset: 4px; }
+.vinci-dialog__confirmation:focus { outline: none; }
+.vinci-dialog__models { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 25px 0; }
+.vinci-dialog__model { display: flex; min-width: 0; flex-direction: column; gap: 10px; padding: 15px; border: 1px solid #e7e7e7; color: #1a1a1a; text-decoration: none; font: 400 24px/1.2 'Genos', sans-serif; }
+.vinci-dialog__model:hover { border-color: #e51837; }
+.vinci-dialog__model img { display: block; width: 100%; height: 180px; object-fit: contain; }
+.vinci-dialog__model-link { color: #e51837; font-size: 18px; }
+.vinci-dialog__store-result { margin-top: 22px !important; padding: 18px; background: #f7f7f7; }
+
+@media (max-width: 540px) {
+  .vinci-dialog { max-height: calc(100dvh - 24px); }
+  .vinci-dialog__body { padding: 42px 23px 25px; }
+  .vinci-dialog h2 { font-size: 30px; }
+  .vinci-dialog__fields, .vinci-dialog__models { grid-template-columns: 1fr; }
+  .vinci-dialog__model img { height: 160px; }
+  .vinci-dialog__actions .vinci-dialog__button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .vinci-dialog[open] { animation: vinci-dialog-enter .16s ease-out; }
+  @keyframes vinci-dialog-enter { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+}

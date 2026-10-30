@@ -1,0 +1,137 @@
+/* Dimensions and typography follow the original 1440 px VINCI CARRO frame. */
+.carro-page{margin:0;background:#fff;color:#000}
+.carro-main{max-width:1440px;margin:0 auto}
+.carro-main *{box-sizing:border-box}
+.carro-main h1,.carro-main h2,.carro-main p{margin:0;font-weight:400}
+.carro-main h1,.carro-main h2,.carro-main p,.carro-detail-legend button,.carro-faq summary span{text-box-trim:trim-both;text-box-edge:cap alphabetic}
+.carro-main h1,.carro-main h2,.carro-main button,.carro-stats,.carro-performance-intro,.carro-faq-subtitle,.carro-faq summary{font-family:"Genos",sans-serif}
+.carro-hero{margin-top:-23px}
+.carro-hero-image{display:block;width:947px;max-width:calc(100% - 80px);height:auto;aspect-ratio:947/533;object-fit:cover;margin:0 auto;transform:translateX(13.5px)}
+.carro-hero-copy{max-width:911px;margin:4px auto 0;text-align:center;transform:translateX(19.5px)}
+.carro-hero h1{font-size:72px;line-height:1}
+.carro-hero-copy>p{margin-top:39px;color:#666;font-family:"Host Grotesk",sans-serif;font-size:20px;line-height:36px}
+.carro-hero-actions{display:flex;justify-content:center;gap:17px;margin-top:39px}
+.carro-main .carro-button{display:flex;align-items:center;justify-content:center;width:273px;height:52px;border:1px solid #000;border-radius:4px;background:#fff;color:#000;font-size:20px;font-weight:500;line-height:1;text-transform:uppercase;cursor:pointer}
+.carro-main .carro-button-primary{border-color:#e51837;background:#e51837;color:#fff}
+.carro-button span{text-box-trim:trim-both;text-box-edge:cap alphabetic}
+.carro-button:hover{background:#f2f2f2}
+.carro-main .carro-button-primary:hover{background:#c9102d;border-color:#c9102d}
+.carro-button:focus-visible,.carro-hotspot:focus-visible,.carro-detail-legend button:focus-visible,.carro-faq summary:focus-visible{outline:2px solid #e51837;outline-offset:5px}
+.carro-performance{margin-top:81px}
+.carro-performance-intro{font-size:24px;font-weight:300!important;line-height:1;text-align:center;text-transform:uppercase;color:#666}
+.carro-stats{display:grid;grid-template-columns:269px 422px 289px;max-width:980px;margin:59px auto 0;position:relative;left:14px;height:92px}
+.carro-stat{padding-top:6px}
+.carro-stat+.carro-stat{border-left:1px solid #d3d0d0;padding-left:58px}
+.carro-stat-value{font-size:72px;font-weight:300!important;line-height:1;text-transform:uppercase;white-space:nowrap}
+.carro-stat-label{margin-top:36px!important;font-size:24px;font-weight:300!important;line-height:1;text-transform:uppercase}
+.carro-road-image{margin:81px 40px 0;border-radius:12px;overflow:hidden;height:520px}
+.carro-road-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.carro-features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:36px}
+.carro-feature-copy{height:191px;padding:37px 15px 0 26px}
+.carro-feature+.carro-feature .carro-feature-copy{border-left:1px solid #e8e8e8}
+.carro-feature h2{font-size:26px;line-height:1;text-transform:uppercase;white-space:nowrap}
+.carro-feature p{margin-top:30px;font-family:"Host Grotesk",sans-serif;font-size:16px;line-height:28px;color:#979797;max-width:319px}
+.carro-feature>img{display:block;width:100%;height:272px;object-fit:cover;object-position:center}
+.carro-details{margin:61px 40px 0}
+.carro-details-header{display:flex;justify-content:space-between;min-height:138px;gap:40px}
+.carro-details-intro{width:379px;flex:0 0 379px;padding-top:8px}
+.carro-details-intro h2{font-size:42px;line-height:1;margin-left:2px}
+.carro-details-intro p{font-family:"Host Grotesk",sans-serif;font-size:16px;line-height:32px;color:#666;margin-top:36px;max-width:379px}
+.carro-detail-legend{display:grid;grid-auto-flow:column;grid-template-rows:repeat(4,18px);grid-template-columns:229px 228px;column-gap:36px;row-gap:17px;padding:0;margin:0;list-style:none;width:493px;flex:0 0 493px;transform:translateX(-1px)}
+.carro-detail-legend li{margin:0;padding:0}
+.carro-detail-legend button{display:flex;gap:9px;align-items:center;white-space:nowrap;border:0;padding:0;background:transparent;color:#666;font-size:16px;font-weight:400;line-height:1;text-transform:uppercase;cursor:pointer}
+.carro-detail-legend button span{display:flex;align-items:center;justify-content:center;background:#1a1a1a;color:#fff;width:18px;height:18px;flex:0 0 18px;border-radius:50%;font-family:"Host Grotesk",sans-serif;font-size:12px;line-height:1}
+.carro-detail-legend button.is-active{color:#e51837}
+.carro-detail-legend button.is-active span{background:#e51837}
+.carro-detail-image{position:relative;width:1074px;max-width:100%;margin:11px auto 0;aspect-ratio:1074/604}
+.carro-detail-image>img{display:block;width:100%;height:100%;object-fit:cover}
+.carro-main .carro-hotspot{position:absolute;left:var(--x);top:var(--y);display:flex;align-items:center;justify-content:center;padding:0;border:0;border-radius:50%;width:18px;height:18px;background:#e51837;color:#fff;font-family:"Host Grotesk",sans-serif;font-size:12px;font-weight:400;line-height:1;cursor:pointer}
+.carro-hotspot:hover,.carro-hotspot[aria-pressed="true"]{box-shadow:0 0 0 5px #e5183733}
+.carro-hotspot-tooltip{position:absolute;left:var(--x);top:var(--y);transform:translate(-45%,-115%);max-width:240px;padding:9px 12px;border-radius:3px;background:#1a1a1a;color:white;font-family:"Host Grotesk",sans-serif;font-size:13px;text-align:center;pointer-events:none;z-index:2}
+.carro-hotspot-tooltip[hidden]{display:none}
+.carro-faq{max-width:1064px;margin:44px auto 0}
+.carro-faq>h2{font-size:42px;line-height:32px;text-align:center}
+.carro-faq-subtitle{margin-top:36px!important;font-size:22px;line-height:32px;letter-spacing:2.2px;color:#979797;text-align:center}
+.carro-faq-list{margin-top:59px}
+.carro-faq details{margin:0;padding:0 0 73px}
+.carro-faq details:last-child{padding-bottom:0;padding-top:6px}
+.carro-faq summary{display:flex;justify-content:space-between;align-items:center;gap:35px;list-style:none;cursor:pointer;color:#1a1a1a;font-size:26px;font-weight:400;line-height:32px;text-transform:uppercase}
+.carro-faq summary::-webkit-details-marker{display:none}
+.carro-faq summary span{max-width:951px}
+.carro-faq details:nth-child(1) summary span{max-width:912px}
+.carro-faq details:nth-child(2) summary span{max-width:910px}
+.carro-faq details:nth-child(4) summary span{max-width:850px}
+.carro-faq details:nth-child(5) summary span{max-width:919px}
+.carro-faq summary img{flex:0 0 24px;width:24px;height:12px;transition:transform .2s}
+.carro-faq details[open] summary img{transform:rotate(180deg)}
+.carro-faq details>p{font-family:"Host Grotesk",sans-serif;font-size:16px;line-height:28px;color:#666;max-width:920px;padding-top:28px}
+.carro-footer-divider{height:1px;background:#bcbcbc;max-width:1440px;margin:94px auto 0}
+@media(min-width:1441px){.carro-page #site-header,.carro-page #site-footer{max-width:1440px;margin-left:auto;margin-right:auto}}
+@media(max-width:1199px){
+  .carro-hero-copy{max-width:calc(100% - 80px);transform:none}
+  .carro-hero-image{transform:none}
+  .carro-stats{left:0;grid-template-columns:repeat(3,1fr);width:calc(100% - 100px)}
+  .carro-stat+.carro-stat{padding-left:30px}
+  .carro-stat-value{font-size:60px}
+  .carro-feature-copy{height:215px;padding-left:20px}
+  .carro-feature h2{font-size:23px;white-space:normal;line-height:26px}
+  .carro-feature p{font-size:14px;line-height:25px;margin-top:25px}
+  .carro-details-header{gap:24px}
+  .carro-details-intro{width:34%;flex:0 0 34%}
+  .carro-detail-legend{width:auto;flex:0 0 auto;grid-template-columns:auto auto;column-gap:25px}
+  .carro-detail-legend button{font-size:14px}
+  .carro-faq{margin-left:70px;margin-right:70px}
+  .carro-faq summary{font-size:24px}
+}
+@media(max-width:767px){
+  .carro-hero{margin-top:0;padding-top:12px}
+  .carro-hero-image{max-width:100%;width:100%}
+  .carro-hero-copy{max-width:calc(100% - 40px);margin-top:15px}
+  .carro-hero h1{font-size:52px}
+  .carro-hero-copy>p{margin-top:26px;font-size:16px;line-height:27px}
+  .carro-hero-actions{gap:12px;margin-top:27px}
+  .carro-main .carro-button{width:50%;max-width:273px;font-size:18px}
+  .carro-performance{margin-top:58px}
+  .carro-performance-intro{font-size:22px}
+  .carro-stats{width:calc(100% - 40px);margin-top:35px;height:auto;min-height:80px;gap:12px}
+  .carro-stat+.carro-stat{padding-left:12px}
+  .carro-stat-value{font-size:clamp(28px,6.6vw,48px)}
+  .carro-stat-label{font-size:18px;margin-top:25px!important}
+  .carro-road-image{height:auto;aspect-ratio:1360/650;margin:54px 20px 0;border-radius:8px}
+  .carro-features{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:32px;row-gap:30px}
+  .carro-feature-copy{height:230px;padding:24px 16px 0}
+  .carro-feature:nth-child(3) .carro-feature-copy{border-left:0}
+  .carro-feature h2{font-size:23px;min-height:32px}
+  .carro-feature p{font-size:14px;line-height:24px;margin-top:20px}
+  .carro-feature>img{height:auto;aspect-ratio:360/272}
+  .carro-details{margin:48px 20px 0}
+  .carro-details-header{flex-direction:column;gap:30px}
+  .carro-details-intro{width:100%;flex:auto;padding:0}
+  .carro-details-intro h2{font-size:38px;margin:0}
+  .carro-details-intro p{font-size:15px;line-height:27px;margin-top:26px;max-width:100%}
+  .carro-detail-legend{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:15px;row-gap:15px}
+  .carro-detail-legend button{font-size:clamp(10px,2.6vw,14px);gap:5px}
+  .carro-detail-legend button span{width:16px;height:16px;flex-basis:16px;font-size:10px}
+  .carro-detail-image{margin-top:24px}
+  .carro-main .carro-hotspot{width:17px;height:17px;font-size:10px}
+  .carro-faq{margin:40px 25px 0}
+  .carro-faq>h2{font-size:38px}
+  .carro-faq-subtitle{font-size:20px;margin-top:28px!important}
+  .carro-faq-list{margin-top:42px}
+  .carro-faq details{padding-bottom:35px}
+  .carro-faq summary{font-size:22px;line-height:28px;gap:16px}
+  .carro-faq summary img{width:24px;height:12px;flex-basis:24px}
+  .carro-faq details>p{font-size:15px;line-height:26px;padding-top:20px}
+  .carro-footer-divider{margin-top:55px}
+}
+@media(max-width:360px){
+  .carro-features{grid-template-columns:1fr}
+  .carro-feature-copy{height:180px}
+  .carro-feature+.carro-feature .carro-feature-copy{border-left:0}
+  .carro-stats{display:flex;flex-direction:column;gap:24px}
+  .carro-stat,.carro-stat+.carro-stat{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 0 18px;border:0;border-bottom:1px solid #ddd}
+  .carro-stat-value{font-size:36px}
+  .carro-stat-label{margin-top:0!important;font-size:17px}
+  .carro-detail-legend{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row}
+  .carro-detail-legend button{font-size:13px}
+}

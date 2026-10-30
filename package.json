@@ -1,0 +1,7 @@
+{
+  "name": "vinci-nicollas-pereira",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Implementação do projeto VINCI do Figma Turbo — TDE de Nicollas Pereira",
+  "scripts": { "dev": "node scripts/serve.mjs" }
+}
