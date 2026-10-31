@@ -17,3 +17,4 @@ defineEmits(['open-models', 'open-test-drive', 'open-info']);
     <button class="mobile-nav-toggle" data-open-models :aria-expanded="modelsOpen" aria-controls="models-menu" aria-label="Abrir menu de veículos" @click="$emit('open-models', $event)">☰</button>
   </header>
 </template>
+

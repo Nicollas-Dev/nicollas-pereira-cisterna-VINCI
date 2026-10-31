@@ -51,3 +51,4 @@ const images = {
     <div class="home-photo home-photo-highway"><img :src="images.highway" alt="Sedã elétrico preto percorrendo uma rodovia" width="1480" height="988" loading="lazy"></div>
   </main>
 </template>
+

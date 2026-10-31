@@ -64,3 +64,4 @@ onBeforeUnmount(() => {
   <div id="site-footer"><SiteFooter @open-info="openDialog('info', $event)" /></div>
   <SiteDialogs v-if="dialogKind" :kind="dialogKind" :title="dialogTitle" @close="dialogKind = null" @open-test-drive="openDialog('test-drive')" />
 </template>
+

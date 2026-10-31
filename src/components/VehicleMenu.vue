@@ -38,3 +38,4 @@ function rememberFirst(element, index) { if (index === 0) firstLink.value = elem
     <button class="menu-close" aria-label="Fechar menu de veículos" @click="$emit('close')">×</button>
   </section>
 </template>
+

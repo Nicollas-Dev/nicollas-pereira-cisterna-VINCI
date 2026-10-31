@@ -154,3 +154,4 @@ onBeforeUnmount(() => document.removeEventListener('keydown', handleEscape))
   </main>
   <div class="carro-footer-divider"></div>
 </template>
+
