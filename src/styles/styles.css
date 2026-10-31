@@ -1,4 +1,3 @@
-@import url('./assets/fonts/fonts.css');
 @import url('./dialogs.css');
 
 :root{--red:#e51837;--ink:#1a1a1a;--muted:#666;--line:#ddd;--page-gutter:40px;--font-display:'Genos',sans-serif;--font-body:'Host Grotesk',sans-serif;color-scheme:light}

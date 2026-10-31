@@ -1,18 +1,30 @@
 # VINCI — TDE
 
-Implementação acadêmica de **Nicollas Pereira**, desenvolvida em HTML5, CSS3 e JavaScript a partir do [projeto VINCI no Figma](https://www.figma.com/design/1TjOD1uztwrOtFkDywi2il/PROJETO-VINCI?node-id=1-28).
+Implementação acadêmica de **Nicollas Pereira**, desenvolvida com **Vue 3, HTML5, CSS3 e JavaScript**, utilizando Vite, a partir do [projeto VINCI no Figma](https://www.figma.com/design/1TjOD1uztwrOtFkDywi2il/PROJETO-VINCI?node-id=1-28).
 
 As páginas reproduzem a Home, a apresentação do veículo e o megamenu do arquivo original, utilizando suas imagens, cores e tipografias. O layout também se adapta a telas menores.
 
 ## Executar localmente
 
-Com o Node.js instalado, execute na pasta do projeto:
+Com Node.js 24 e npm instalados, execute na pasta do projeto:
 
 ```sh
-node scripts/serve.mjs
+npm install
+npm run dev
 ```
 
-Abra [http://localhost:4173/](http://localhost:4173/). Não é necessário instalar dependências ou executar uma compilação.
+Abra o endereço informado pelo Vite. Para testar a compilação de produção:
+
+```sh
+npm run build
+npm run preview
+```
+
+A prévia de produção fica em [http://localhost:4173/](http://localhost:4173/).
+
+## Componentes Vue
+
+`src/App.vue` coordena o estado da aplicação. Os componentes em `src/components/` implementam o cabeçalho, o rodapé, o megamenu, as telas Home e Carro e os diálogos. Listas usam `v-for`, os formulários usam `v-model` e os controles usam eventos Vue e estado reativo. Os estilos estão em `src/styles/` e os arquivos originais do Figma em `public/assets/`.
 
 ## Funcionalidades
 
@@ -25,6 +37,6 @@ O formulário é uma demonstração acadêmica: nenhum agendamento real é feito
 
 ## Publicação
 
-O projeto é estático e compatível com GitHub Pages, com publicação a partir da raiz do repositório. Para a entrega, deve ser utilizado somente o link público da aplicação, contendo o nome e o sobrenome do aluno, após verificar seu funcionamento em uma janela anônima.
+O GitHub Actions instala as dependências, executa a compilação do Vue com Vite e publica a pasta `dist/` no GitHub Pages a cada atualização da branch `master`. As duas entradas, `index.html` e `carro.html`, preservam os endereços das telas. Para a entrega, deve ser utilizado somente o link público da aplicação, contendo o nome e o sobrenome do aluno, após verificar seu funcionamento em uma janela anônima.
 
-As fontes Genos e Host Grotesk são distribuídas sob a licença SIL Open Font License. Os textos das licenças estão em `assets/fonts/`.
+As fontes Genos e Host Grotesk são distribuídas sob a licença SIL Open Font License. Os textos das licenças estão em `public/assets/fonts/`.

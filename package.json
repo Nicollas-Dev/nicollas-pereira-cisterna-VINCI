@@ -2,6 +2,17 @@
   "name": "vinci-nicollas-pereira",
   "version": "1.0.0",
   "private": true,
-  "description": "Implementação do projeto VINCI do Figma Turbo — TDE de Nicollas Pereira",
-  "scripts": { "dev": "node scripts/serve.mjs" }
+  "type": "module",
+  "description": "Projeto VINCI em Vue 3, HTML5, CSS3 e JavaScript — TDE de Nicollas Pereira",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": { "vue": "3.5.44" },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.10",
+    "vite": "8.3.5"
+  },
+  "engines": { "node": ">=22.12.0" }
 }

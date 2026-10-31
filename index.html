@@ -1,86 +1,15 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Conheça os veículos elétricos VINCI, explore os modelos e agende seu test drive.">
-    <meta name="theme-color" content="#e51837">
-    <title>VINCI — O futuro em movimento</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="home.css">
-    <script src="shared.js" defer></script>
-    <script src="app.js" defer></script>
-  </head>
-  <body class="home-page">
-    <div id="site-header"></div>
-    <main id="main-content">
-      <section class="home-hero" aria-labelledby="hero-title">
-        <img class="home-hero-image" src="assets/images/4d6fb95259103ca5bb798aeb6a4dc380baf1d0f7.png" alt="Veículo elétrico branco conectado a uma estação de recarga" fetchpriority="high">
-        <div class="home-hero-overlay" aria-hidden="true"></div>
-        <div class="home-hero-content">
-          <h1 id="hero-title" class="trim">VINCI MODEL V3</h1>
-          <p class="trim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-          <div class="home-hero-buttons">
-            <button class="home-button home-button-primary" type="button" data-open-models><span class="trim">Modelos</span></button>
-            <button class="home-button home-button-outline" type="button" data-open-test-drive><span class="trim">Test Drive</span></button>
-          </div>
-        </div>
-      </section>
-
-      <section class="home-models" id="modelos" aria-label="Conheça nossos modelos">
-        <article class="home-model home-model-v2">
-          <div class="home-model-top">
-            <h2 class="trim">VINCI <br>MODEL V2</h2>
-            <dl class="home-specs">
-              <div><dt class="trim">Potência;</dt><dd class="trim">300 cavalos</dd></div>
-              <div><dt class="trim">Autonomia:</dt><dd class="trim">500km por carga</dd></div>
-              <div><dt class="trim">Peso:</dt><dd class="trim">1.500 kg</dd></div>
-              <div><dt class="trim">Tecnologia:</dt><dd class="trim">GPS e Smartink</dd></div>
-            </dl>
-          </div>
-          <a class="home-model-image" href="carro.html" aria-label="Conheça o VINCI Model V2">
-            <img src="assets/images/d91dce667b4263e0f3ea01c50edf8e89ace50c89.png" alt="VINCI Model V2, SUV branco visto de trás" width="1480" height="833">
-          </a>
-          <div class="home-model-bottom">
-            <p class="trim">A SUV mais robusta da categoria</p>
-            <a class="trim" href="carro.html">Conheça</a>
-          </div>
-        </article>
-
-        <article class="home-model home-model-v1">
-          <div class="home-model-top">
-            <h2 class="trim">VINCI<br>MODEL V1</h2>
-            <dl class="home-specs">
-              <div><dt class="trim">Potência;</dt><dd class="trim">300 cavalos</dd></div>
-              <div><dt class="trim">Autonomia:</dt><dd class="trim">500km por carga</dd></div>
-              <div><dt class="trim">Peso:</dt><dd class="trim">1.500 kg</dd></div>
-              <div><dt class="trim">Tecnologia:</dt><dd class="trim">GPS e Smartink</dd></div>
-            </dl>
-          </div>
-          <a class="home-model-image" href="carro.html" aria-label="Conheça os modelos VINCI">
-            <img src="assets/images/41c49521bc684aa43c70f4f353609d8ee65d1a89.png" alt="VINCI Model V1, hatch vermelho visto de frente" width="1480" height="1012" loading="lazy">
-          </a>
-          <div class="home-model-bottom">
-            <p class="trim">A SUV mais robusta da categoria</p>
-            <a class="trim" href="carro.html">Conheça</a>
-          </div>
-        </article>
-      </section>
-
-      <div class="home-photo home-photo-forest">
-        <img src="assets/images/371a1a63003bf0b0fde98a955d761494591ed60a.png" alt="Carro elétrico em uma estrada sinuosa cercada por árvores" width="1480" height="866" loading="lazy">
-      </div>
-
-      <nav class="home-actions" id="servicos" aria-label="Explore a VINCI">
-        <button type="button" data-open-test-drive><span class="trim">Agende um test drive</span><img src="assets/chevron-right.svg" alt="" aria-hidden="true"></button>
-        <button type="button" data-open-offers><span class="trim">Veja ofertas</span><img src="assets/chevron-right.svg" alt="" aria-hidden="true"></button>
-        <button type="button" data-open-stores><span class="trim">Encontre uma loja</span><img src="assets/chevron-right.svg" alt="" aria-hidden="true"></button>
-      </nav>
-
-      <div class="home-photo home-photo-highway">
-        <img src="assets/images/849a153fc2b55176470a735932cf2604865d1e20.png" alt="Sedã elétrico preto percorrendo uma rodovia" width="1480" height="988" loading="lazy">
-      </div>
-    </main>
-    <div id="site-footer"></div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça os veículos elétricos VINCI, explore os modelos e agende seu test drive.">
+  <meta name="theme-color" content="#e51837">
+  <title>VINCI — O futuro em movimento</title>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
+</head>
+<body class="home-page" data-page="home">
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
